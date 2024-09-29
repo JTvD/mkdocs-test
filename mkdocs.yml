@@ -1,0 +1,35 @@
+site_name: Documentation-Test
+site_description: python documentation test
+
+theme: readthedocs
+repo_name: wurDevTim/Documentation-Test
+repo_url: https://github.com/wurDevTim/Documentation-Test
+extra_css:
+  - style.css
+
+nav:
+  - Home: index.md
+  - Code: 
+    - main: Code/main.md
+    - models: Code/models.md
+    - Swagger_docs:
+      - README: Code/Swagger_docs/README.md
+      - FytotronApi: Code/Swagger_docs/FytotronApi.md
+      - GetvarApi: Code/Swagger_docs/GetvarApi.md
+      - InfoApi: Code/Swagger_docs/InfoApi.md
+      - InfoValues: Code/Swagger_docs/InfoValues.md
+      - JsonGetvarResult: Code/Swagger_docs/JsonGetvarResult.md
+      - JsonInfoResult: Code/Swagger_docs/JsonInfoResult.md
+      - JsonMonitorResult: Code/Swagger_docs/JsonMonitorResult.md
+      - MonitorApi: Code/Swagger_docs/MonitorApi.md
+      - MonitorValues: Code/Swagger_docs/MonitorValues.md
+      - SetvarApi: Code/Swagger_docs/SetvarApi.md
+  - Changelog: CHANGELOG.md
+
+
+markdown_extensions:
+- pymdownx.snippets:
+    check_paths: true
+
+plugins: 
+- mkdocstrings
